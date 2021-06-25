@@ -1,0 +1,15 @@
+// mixins
+@mixin display($value){
+    display: $value
+}
+@mixin flex($horizontal, $vertivcal){
+    justify-content: $horizontal;
+    align-items: $vertivcal;
+}
+@mixin postions($postionValue) {
+    position: $postionValue;
+}
+@mixin absolute($left,$top){
+    top: $top;
+    left : $left;
+}

@@ -1,0 +1,45 @@
+@import  './variable.scss';
+@import  './mixins.scss';
+@import  './private.scss';
+
+
+.header-wrapper {
+    @extend %container;
+    .navbar{
+        background-color: $color01;
+        ul {
+            @include display(flex);
+            @include flex(space-between,center);
+            li{
+                margin: $size01;
+                a{
+                    text-decoration: none;
+                    @extend %title;
+                }
+            }
+        }
+    }
+}
+.hero-section {
+    @extend %container;
+    @include postions(absolute);
+    @include absolute($size03, $size02);
+    .box {
+        @include display(flex);
+        @include flex(space-around,flex-end);
+        h1 {
+            @extend %title;
+            margin: 0 0 $size03;
+            &:hover {
+                color: $color02;
+            }
+        }
+        p {
+            font-size: $size02;
+            color: $color02;
+        }
+        @media (max-width: 1024px) {
+            @include flex(center,center);
+        }
+    }
+}

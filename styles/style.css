@@ -1,0 +1,53 @@
+.hero-section .box h1, .header-wrapper .navbar ul li a {
+  font-size: 40px;
+  color: blue;
+  margin: 0 0 16px;
+}
+
+.hero-section, .header-wrapper {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-wrapper .navbar {
+  background-color: #f50000;
+}
+.header-wrapper .navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-wrapper .navbar ul li {
+  margin: 10px;
+}
+.header-wrapper .navbar ul li a {
+  text-decoration: none;
+}
+
+.hero-section {
+  position: absolute;
+  top: 16px;
+  left: 40px;
+}
+.hero-section .box {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.hero-section .box h1 {
+  margin: 0 0 40px;
+}
+.hero-section .box h1:hover {
+  color: green;
+}
+.hero-section .box p {
+  font-size: 16px;
+  color: green;
+}
+@media (max-width: 1024px) {
+  .hero-section .box {
+    justify-content: center;
+    align-items: center;
+  }
+}
